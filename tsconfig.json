@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "jest",
+      "node",
+      "next-auth"
+    ],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "next.config.js",
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "pages/**/*.js",
+    "pages/**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist",
+    "cypress"
+  ]
+}
